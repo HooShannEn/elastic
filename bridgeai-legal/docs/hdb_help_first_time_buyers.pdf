@@ -1,0 +1,1493 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>HDB | Page Not Found</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="description" content="Page Not Found">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/html/Dashboard/Foundation/Theming/images/favicon.png">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer','GTM-574B3NJ');</script>
+    <!-- End Google Tag Manager -->
+
+    <script
+        src="//assets.adobedtm.com/a63ef04a8a06d4763abe9b28a8d967e7e749d199/satelliteLib-db3891214175cc48594c242657d262be8297f3d8.js"></script>
+
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/jquery.fancybox.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/normalize.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/foundation.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/idangerous.swiper.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/pikaday.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/main2.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="/html/Dashboard/Foundation/Theming/fonts/sgds.css">
+    <link rel="stylesheet" type="text/css" href="/html/Dashboard/Foundation/Theming/fonts/infowebfonts.css">
+    <link rel="stylesheet" href="/html/Dashboard/Foundation/Theming/styles/header.css">
+
+    <script type="text/javascript" src="/html/Dashboard/Foundation/Theming/scripts/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="/html/Dashboard/Foundation/Theming/scripts/modernizr-2.8.0.min2.js"></script>
+
+
+    <script src="https://assets.wogaa.sg/scripts/wogaa.js"></script>
+    <script src="//s3-ap-southeast-1.amazonaws.com/percy-assets/scripts.js" async></script>
+
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="~/html/Dashboard/Foundation/Theming/styles/ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="~/html/Dashboard/Foundation/Theming/scripts/respond.min.js"></script>
+    <![endif]-->
+
+    <script id="searchsg-config"
+        src='https://api.search.gov.sg/v1/searchconfig.js?clientId=7e00c9e6-76ce-11ee-b962-0242ac120002'
+        defer>
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".primary-nav .js-primary-nav").on('mouseover', function () {
+                var header_val = $(this).find(".primary-nav-link").text();
+                var active_val = header_val.replace(/ /g, '-').toLowerCase();
+                $(".menu_content").hide();
+                $(".menu-" + active_val + "").css('display', 'table-cell');
+            });
+
+            $(".navbar-toggle").on('click', function () {
+                if ($(this).hasClass('open')) {
+                    $(".mobile-nav").removeClass("show-menu");
+                    $(".navbar-toggle").removeClass("open").addClass("menu");
+                }
+                else {
+                    $(".js-input-search").val('');
+                    $(".mobile-nav").addClass("show-menu");
+                    $(".navbar-toggle").removeClass("menu").addClass("open");
+                    $('.mobile-nav-item').removeClass('on-hover');
+                    $('.mobile-nav-subpanel').removeClass('active').hide();
+                }
+            });
+
+            $(".search_content .sgds-icon-cross").hide();
+            $(".search_content .sgds-icon-search").on('click', function () {
+                $(".js-input-search").val('');
+                $(".site-search, .search_content .sgds-icon-cross").show();
+                $(".search_content .sgds-icon-search, .alert-bar").hide();
+
+            });
+            $(".search_content .sgds-icon-cross").on('click', function () {
+                $(".site-search, .search_content .sgds-icon-cross").hide();
+                $(".search_content .sgds-icon-search").show();
+            });
+
+            var url = window.location.pathname;
+            var s1 = url.split("/");
+            var s2 = s1.slice(3, 4);
+            var s3 = s2.toString();
+            if (s3 == 'heartlandbeat')
+                s3 = 'community';
+            $('#nav-' + s3).addClass('active');
+        });
+
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': undefined,
+            'event_category': undefined,
+            'event_action': undefined,
+            'event_label': undefined,
+            'environment': undefined,
+            'service_type': undefined,
+            'user_agent': undefined,
+            'user_type': undefined,
+            'user_id': undefined,
+            'menu_l1': undefined,
+            'menu_l2': undefined,
+            'menu_l3': undefined,
+            'loggedin_status': undefined,
+            'user_registration_date': undefined,
+            'search_keyword': undefined,
+            'search_id': undefined,
+            'result_count': undefined,
+            'signup_type': undefined,
+            'login_type': undefined,
+            'signup_step': undefined,
+            'login_step': undefined,
+            'signup_status': undefined,
+            'login_status': undefined,
+            'signup_location': undefined,
+            'login_location': undefined,
+            'step_name': undefined,
+            'form_step_name': undefined,
+            'permission': undefined,
+            'ui_section_name': undefined,
+            'ui_element_name': undefined,
+            'click_text': undefined,
+            'position': undefined,
+            'form_status': undefined,
+            'video_title': undefined,
+            'depth': undefined,
+            'outbound_link': undefined,
+            'inbound_link': undefined,
+            'content_title': undefined,
+            'ui_form_name': undefined,
+            'form_field_text': undefined,
+            'ui_location': undefined,
+            'platform': undefined,
+            'error_code': undefined,
+            'carpark_application_period': undefined,
+            'vehicle_type': undefined,
+            'vehicle_ownership': undefined,
+            'search_by': undefined,
+            'carpark_number': undefined,
+            'payment_mode': undefined,
+            'application_reference_number': undefined,
+            'e_service_id': undefined
+        });
+    </script>
+
+    <style>
+        .at-share-tbx-element .at-share-btn {
+            padding: 10px !important;
+        }
+
+        .errorbtn {
+            background-color: #0C8188;
+            border-color: #0A676D;
+            color: white;
+            cursor: pointer;
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            border-style: solid;
+            border-width: 0;
+            border-radius: 0px;
+            padding: 15px 63px 15px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .main-content .page-intro {
+                text-align: center;
+            }
+
+            .errorbtn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sgds-masthead">
+        <div class="sgds-container">
+            <div class="wrapper_width is-multiline is-vcentered masthead-layout-container">
+                <div class="col is-9-desktop is-12-touch has-text-centered-touch">
+                    <div class="masthead-layout">
+                        <span class="sgds-icon sgds-icon-sg-crest" style="color: red"></span>
+                        <span style="display: table-cell; vertical-align: middle">
+                            <span class="banner-text-layout">
+                                <span class="is-text">A Singapore Government Agency Website &nbsp;
+                                </span>
+                                <span class="sgds-masthead-button" id="sgds-masthead-identify" aria-expanded="false"
+                                    aria-controls="sgds-masthead-content">
+                                    <span class="is-text sgds-masthead-button-text">How to identify
+                                    </span>
+                                    <span class="sgds-icon sgds-icon-chevron-down"
+                                        id="sgds-masthead-identify-icon"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="masthead-divider is-hidden" id="sgds-masthead-divider"
+                        style="padding-left: -12px; padding-right: -12px">
+                    </div>
+                </div>
+                <div class="col banner-content-layout is-hidden" id="sgds-masthead-content">
+                    <div class="banner-content">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/2ec2122b2010672b9cbb6efb5138048d8aff4a09/5d1ab/assets/img/government_building.svg"
+                            class="banner-icon">
+                        <div class="banner-content-text-container">
+                            <strong class="banner-content-title">Official website links end with .gov.sg</strong>
+                            <p>
+                                Government agencies communicate via
+
+                                <strong>.gov.sg </strong>
+                                websites <span class="avoidwrap">(e.g. go.gov.sg/open)</span>.
+
+                                <a href="https://www.gov.sg/trusted-sites#govsites"
+                                    class="banner-content-text sgds-masthead-button-link sgds-masthead-button-text"
+                                    target="_blank" rel="noreferrer">Trusted website<text
+                                        style="letter-spacing: -3px">s</text>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="banner-content">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/aecdf1b88c0edfa72e7fef099f28e93b80c8336a/8c6a1/assets/img/lock.svg"
+                            class="banner-icon">
+                        <div class="banner-content-text-container">
+                            <strong class="banner-content-title">Secure websites use HTTPS</strong>
+                            <p>
+                                Look for a
+
+                                <strong>lock </strong>(<img
+                                    src="https://d33wubrfki0l68.cloudfront.net/aecdf1b88c0edfa72e7fef099f28e93b80c8336a/8c6a1/assets/img/lock.svg"
+                                    class="inline-banner-icon">) or https:// as an added precaution. Share sensitive
+                                information only on official secure websites.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="nav-bar">
+        <div class="clearfix">
+            <div class="wrapper_width">
+                <div class="hidden-for-medium-only hidden-for-small-only left clearfix">
+                    <div class="site-logo">
+                        <a href="/cs/infoweb/homepage" class="link">
+                            <img src="/html/Dashboard/Foundation/Theming/images/site-logo-small.jpg"
+                                alt="Housing &amp; Development Board Logo" class="site-logo-img">
+
+
+
+                            <h2 class="visuallyhidden">Housing & Development Board</h2>
+                        </a>
+                    </div>
+                    <a href="#main" class="skiplink">Skip to main</a>
+                </div>
+                <nav class="mobile-nav mobile_dropdown" role="navigation">
+                    <ul tabindex="-1" class="list">
+                        <li class="mobile-nav-item">
+                            <a href="/cs/infoweb/about-us" class="link">About Us</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/vision-mission-and-values" class="link">Vision,
+                                            Mission, and Values
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/our-role" class="link">Our Role
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/our-logo" class="link">Our Logo
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/history" class="link">HDB History and Towns
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/organisation-structure" class="link">Organisation
+                                            Structure
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/achievements-and-accolades"
+                                            class="link">Achievements and Accolades
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/research-and-innovation" class="link">Research and
+                                            Innovation
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/careers" class="link">Careers
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/scholarships-and-internships"
+                                            class="link">Scholarships and Internships
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/news-and-publications" class="link">News &amp;
+                                            Publications
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/about-us/events-and-talks" class="link">Events and Talks
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a href="/cs/infoweb/residential" class="link">Residential</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/buying-a-flat" class="link">Buying a Flat
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/financing-a-flat-purchase"
+                                            class="link">Financing a Flat Purchase
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/servicing-your-hdb-housing-loan"
+                                            class="link">Servicing Your HDB Housing Loan
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/selling-a-flat" class="link">Selling a Flat
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/renting-a-flat" class="link">Renting a Flat
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/living-in-an-hdb-flat" class="link">Living in
+                                            an HDB Flat
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/where2shop" class="link">Shopping in Your
+                                            Neighbourhood
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/renting-out-a-flat-bedroom"
+                                            class="link">Renting Out a Flat/ Bedroom
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/residential/season-parking" class="link">Season Parking
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a href="/cs/infoweb/community" class="link">Community</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/hdb-community-week-2019" class="link">HDB
+                                            Community Week 2019
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/creating-vibrant-places" class="link">Creating
+                                            Vibrant Places
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/caring-for-your-neighbours" class="link">Caring
+                                            for Your Neighbours
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/practising-ecoliving" class="link">Practising
+                                            Eco-Living
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/getting-involved" class="link">Getting Involved
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/community-publications" class="link">Community
+                                            Publications
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/community/new-and-upcoming-events-" class="link">New and
+                                            Upcoming Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a href="/cs/infoweb/business" class="link">Business</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/commercial" class="link">Commercial
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/industrial" class="link">Industrial
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/building-professionals" class="link">Building
+                                            Professionals (BGBiz)
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/renovation-and-repair-contractors"
+                                            class="link">Renovation Contractors
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/land-developers-and-land-users" class="link">Land
+                                            Developers and Land Users
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/tenderers" class="link">Tenderers
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/business/estate-agents-and-salespersons"
+                                            class="link">Estate Agents &amp; Salespersons
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a href="/cs/infoweb/car-parks" class="link">Car Parks</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/types-of-hdb-car-parks" class="link">Types of HDB
+                                            Car Parks
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/car-park-signboards" class="link">Car Park
+                                            Signboards
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/parking-lot-line-markings" class="link">Parking
+                                            Lot Line Markings
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/car-park-location-map" class="link">Car Park
+                                            Location Map
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/parking-offences" class="link">Parking Offences
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/season-parking" class="link">Season Parking
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/shortterm-parking" class="link">Short-Term
+                                            Parking
+                                        </a>
+                                    </li>
+                                    <li class="mobile-nav-item">
+                                        <a href="/cs/infoweb/car-parks/car-parks-for-business-activities"
+                                            class="link">Car Parks for Business Activities
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList"
+                                class="link">e-Services</a>
+                            <span tabindex="-1" class="mobile-nav-expand js-mobile-nav-expand">
+                                <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            </span>
+                            <div class="mobile-nav-subpanel" style="display: none;">
+                                <ul class="list">
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="primary-nav desktop_menu">
+<ul class="primary-nav-list list clearfix">
+
+                <li id="nav-about-us" class="primary-nav-item js-primary-nav">
+                    <a href="/cs/infoweb/about-us" class="primary-nav-link">About Us</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/vision-mission-and-values" class="link mega-nav-title">Vision, Mission, and Values</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/our-role" class="link mega-nav-title">Our Role</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/history" class="link mega-nav-title">HDB History and Towns</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/hdbs-refreshed-roadmap-designing-for-life" class="link mega-nav-title">Designing for Life Roadmap</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/our-logo" class="link mega-nav-title">Our Logo</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/organisation-structure" class="link mega-nav-title">Organisation Structure</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/achievements-and-accolades" class="link mega-nav-title">Achievements and Accolades</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/research-and-innovation" class="link mega-nav-title">Research and Innovation</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/careers" class="link mega-nav-title">Careers</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/scholarships-and-internships" class="link mega-nav-title">Scholarships and Internships</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/about-us/news-and-publications" class="link mega-nav-title">News &amp; Publications</a>
+                                                    </li>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </li>
+                <li id="nav-residential" class="primary-nav-item js-primary-nav">
+                    <a href="/cs/infoweb/residential" class="primary-nav-link">Residential</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/buying-a-flat" class="link mega-nav-title">Buying a Flat </a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/selling-a-flat" class="link mega-nav-title">Selling a Flat</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/servicing-your-hdb-housing-loan" class="link mega-nav-title">Servicing Your HDB Housing Loan</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/renting-a-flat" class="link mega-nav-title">Renting a Flat</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/living-in-an-hdb-flat" class="link mega-nav-title">Living in an HDB Flat</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/where2shop" class="link mega-nav-title">Shopping in Your Neighbourhood</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/renting-out-a-flat-bedroom" class="link mega-nav-title">Renting Out a Flat/ Bedroom</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/residential/season-parking" class="link mega-nav-title">Season Parking</a>
+                                                    </li>
+
+                                </ul></div>
+                            </div></nav>
+                        </div>
+                    </div>
+                </li>
+                <li id="nav-community" class="primary-nav-item js-primary-nav">
+                    <a href="/cs/infoweb/community" class="primary-nav-link">Community</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/hdb-community-day" class="link mega-nav-title">HDB Community Day</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/creating-vibrant-places" class="link mega-nav-title">Creating Vibrant Places</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/caring-for-your-neighbours" class="link mega-nav-title">Caring for Your Neighbours</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/practising-ecoliving" class="link mega-nav-title">Practising Eco-Living</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/getting-involved" class="link mega-nav-title">Getting Involved</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/community/community-publications" class="link mega-nav-title">Community Publications</a>
+                                                    </li>
+
+                                </ul></div>
+                            </div></nav>
+                        </div>
+                    </div>
+                </li>
+                <li id="nav-business" class="primary-nav-item js-primary-nav">
+                    <a href="/cs/infoweb/business" class="primary-nav-link">Business</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/commercial" class="link mega-nav-title">Commercial</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/building-professionals" class="link mega-nav-title">Building Professionals (BGBiz)</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/renovation-contractors" class="link mega-nav-title">Renovation Contractors</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/land-developers-and-land-users" class="link mega-nav-title">Land Developers and Land Users</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/tenderers" class="link mega-nav-title">Tenderers </a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/business/estate-agents-and-salespersons" class="link mega-nav-title">Estate Agents &amp; Salespersons</a>
+                                                    </li>
+
+                                </ul></div>
+                            </div></nav>
+                        </div>
+                    </div>
+                </li>
+                <li id="nav-car-parks" class="primary-nav-item js-primary-nav">
+                    <a href="/cs/infoweb/car-parks" class="primary-nav-link">Car Parks</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/Types-of-HDB-Car-Parks" class="link mega-nav-title">Types of HDB Car Parks</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/car-park-signboards" class="link mega-nav-title">Car Park Signboards</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/parking-lot-line-markings" class="link mega-nav-title">Parking Lot Line Markings</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/car-park-location-map" class="link mega-nav-title">Car Park Location Map</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/parking-offences" class="link mega-nav-title">Parking Offences</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list">
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/season-parking" class="link mega-nav-title">Season Parking</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/shortterm-parking" class="link mega-nav-title">Short-Term Parking</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/car-parks-for-business-activities" class="link mega-nav-title">Car Parks for Business Activities</a>
+                                                    </li>
+                                                    <li class="mega-nav-item js-mega-nav">
+                                                        <a href="/cs/infoweb/car-parks/parkinghdb" class="link mega-nav-title">Parking@HDB</a>
+                                                    </li>
+
+                                </ul></div>
+                            </div></nav>
+                        </div>
+                    </div>
+                </li>
+                <li id="nav-e-services" class="primary-nav-item js-primary-nav">
+                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList" class="primary-nav-link">e-Services</a>
+
+                    <div class="megamenu-panel" style="display: none;">
+                        <div class="wrapper">
+                            <nav class="mega-nav">
+                                <div class="menu_content menu-about-us" style="display: table-cell;">
+                                    <a href="/cs/infoweb/about-us">About Us</a>
+                                    <div>The Housing &amp; Development Board (HDB) is Singapore's public housing authority and a statutory board under the Ministry of National Development. We develop public housing to provide Singaporeans with affordable, quality homes, and a better living environment. Focusing on nurturing a strong family and community spirit, public housing policies and schemes are formulated to meet changing needs and aspirations.</div>
+                                </div>
+                                <div class="menu_content menu-residential" style="display: none;">
+                                    <a href="/cs/infoweb/residential">Residential</a>
+                                    <div>Whether you are buying, selling, or already living in an HDB flat, everything you need to know about residential properties is housed here.</div>
+                                </div>
+                                <div class="menu_content menu-community" style="display: none;">
+                                    <a href="/cs/infoweb/community">Community</a>
+                                    <div>More than homes, our HDB towns are vibrant places to enjoy to the fullest. There is so much in place for you to bond with your neighbours and create an active and cohesive community.</div>
+                                </div>
+                                <div class="menu_content menu-business" style="display: none;">
+                                    <a href="/cs/infoweb/business">Business</a>
+                                    <div>Get the information you need for any business involving HDB homes, properties, commercial spaces, or land under our management.</div>
+                                </div>
+                                <div class="menu_content menu-car-parks" style="display: none;">
+                                    <a href="/cs/infoweb/car-parks">Car Parks</a>
+                                    <div>You can find out more about the types of HDB car parks, important car park information, and parking offences.</div>
+                                </div>
+                                <div class="menu_content menu-e-services" style="display: table-cell;">
+                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList">e-Services</a>
+                                    <div>Transact with us at your convenience. You can submit an application, submit an online enquiry, or make an appointment with us.</div>
+                                </div>
+                                <div class="menu_options">
+
+
+                                        <div class="col">
+                                            <ul class="list">
+                                                <li class="mega-nav-item js-mega-nav">
+                                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList?category=Buying_a_New_Flat" class="link mega-nav-title">Residential</a>
+                                                </li>
+                                                <li class="mega-nav-item js-mega-nav">
+                                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList?category=Commercial" class="link mega-nav-title">Business</a>
+                                                </li>
+                                                <li class="mega-nav-item js-mega-nav">
+                                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList?category=Car_Park_Information" class="link mega-nav-title">Car Parks</a>
+                                                </li>
+                                                <li class="mega-nav-item js-mega-nav">
+                                                    <a href="https://services2.hdb.gov.sg/webapp/FI10AWESVCLIST/FI10SEServiceList?category=General" class="link mega-nav-title">General</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </li>
+    </ul>                </nav>
+
+                <div class="hidden-for-large-only mobile-site-logo hidden-for-xlarge-only hidden-for-xxlarge-only">
+                    <a href="/cs/infoweb/homepage" class="link">
+                        <img src="/html/Dashboard/Foundation/Theming/images/site-logo-small.jpg"
+                            alt="Housing &amp; Development Board Logo" class="site-logo-img">
+                    </a>
+                </div>
+
+                <div class="right clearfix">
+                    <div class="account">
+                        <span class="account-link highlight" style="cursor: pointer">
+                            <span class="sgds-icon sgds-icon-lock"></span>
+                            <span class="account-text">Login</span>
+                            <i class="sgds-icon sgds-icon-chevron-down"></i>
+                        </span>
+                        <div class="account-login-box" style="display: none;">
+                            <span class="arrow-up"></span>
+                            <a href="https://services2.hdb.gov.sg/webapp/FI10PPORTAL/FI10PAtAGlance.jsp"
+                                class="account-link account-login ">
+                                <span class="account-text">Login to My HDBPage</span>
+                            </a>
+                            <a href="https://services2.hdb.gov.sg/webapp/FI10AWBIZ/FI10PBizOverview.jsp"
+                                class="account-link account-login ">
+                                <span class="account-text">Login to My Business</span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggle left-off-canvas-toggle" type="button">
+                        <span class="visuallyhidden">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- <div id="hMessage" class="visuallyhidden"> -->
+                    <!-- To hide Maintenance Message uncomment this line-->
+                    <div id="hMessage" class="alert active" style="display: none;">
+                        <span class="alert-link js-toggle-alert-bar">
+                            <span class="visuallyhidden">Alert</span>
+                            <span class="icon icon-warning"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  <div id="divMessage" class="visuallyhidden">-->
+        <!-- To hide Maintenance Message uncomment this line-->
+        <div id="divMessage" class="alert-bar">
+            <!-- To display Maintenance Message uncomment this line-->
+        </div>
+        <div class="site-search " style="display: block;">
+            <div class="searchbar-wrapper wrapper_width">
+                <!--  <form action="/cs/infoweb/search-result" class="form" role="search">
+                    <input type="search" id="inputSearch" class="input-txt js-input-search" aria-label="Keyword" name="q" placeholder="Search our website" required="" autocomplete="off" style="background-color: #EBEBEB">
+
+                    <button type="submit" class="site-search-btn" aria-label="submit form">
+                        <span class="visuallyhidden">Search</span>
+                        <span class="sgds-icon sgds-icon-search"></span>
+                    </button>
+                </form>-->
+                <div id="searchsg-searchbar">
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+
+    <main id="main" class="landing-page">
+
+        <section class="header-banner">
+            <img src="/cs/infoweb/-/media/HDBContent/Images/Banner/error-page.ashx" alt="Error Page" class="img"
+                style="margin-left: -741px; left: 50%;">
+        </section>
+        <div class="wrapper row">
+            <section class="content-section large-12 columns">
+                <section class="main-content">
+                    <section class="page-intro row">
+                        <h2 class="page-intro-title small-12 medium-4 columns">
+                            <img style="border: none; outline: none; width: 150px; margin: 20px 0;"
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIuNDYgNDMyLjY4Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzQ0NDU0NTt9LmNscy0ye2ZpbGw6IzIwOGY4ZDt9LmNscy0ze2ZpbGw6I2ZmZjt9LmNscy00e2ZpbGw6I2YwNTU1NTt9LmNscy0xMCwuY2xzLTQsLmNscy01LC5jbHMtNiwuY2xzLTgsLmNscy05e3N0cm9rZTojNDQ0NTQ1O30uY2xzLTEwLC5jbHMtMTEsLmNscy00LC5jbHMtNSwuY2xzLTYsLmNscy04LC5jbHMtOXtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LmNscy00LC5jbHMtNSwuY2xzLTZ7c3Ryb2tlLXdpZHRoOjUuNXB4O30uY2xzLTV7ZmlsbDojZmZjYjE4O30uY2xzLTZ7ZmlsbDojMTM2NzM1O30uY2xzLTd7ZmlsbDojZTdlNGU1O30uY2xzLTEwLC5jbHMtMTEsLmNscy04e2ZpbGw6bm9uZTt9LmNscy04LC5jbHMtOXtzdHJva2Utd2lkdGg6OS45NXB4O30uY2xzLTl7ZmlsbDojZjI3MDc0O30uY2xzLTEwe3N0cm9rZS13aWR0aDo5cHg7fS5jbHMtMTF7c3Ryb2tlOiNmMjcwNzQ7c3Ryb2tlLXdpZHRoOjEwcHg7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzkyIiBoZWlnaHQ9IjM1MyIgcng9IjI2LjI4Ii8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSI5LjY1IiB5PSI3LjUiIHdpZHRoPSIzNzQuMjMiIGhlaWdodD0iMzM3IiByeD0iMTkuMzIiLz48cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjE2LjQiIHk9IjEzLjUiIHdpZHRoPSIzNjAuOTEiIGhlaWdodD0iMzI1IiByeD0iMTguNjMiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjI0LjQxIiB5PSIyNi40NCIgd2lkdGg9IjM5MiIgaGVpZ2h0PSIzNTMiIHJ4PSIyNi4yOCIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMzQuMDciIHk9IjMzLjk0IiB3aWR0aD0iMzc0LjIzIiBoZWlnaHQ9IjMzNyIgcng9IjE5LjMyIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDA4LjMsNzEuMjlWMzUxQTE5LjM4LDE5LjM4LDAsMCwxLDM4OSwzNzAuMjlINTMuMzhBMTkuMzgsMTkuMzgsMCwwLDEsMzQuMDcsMzUxVjcxLjI5WiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMzAuNjMiIHk9IjY3LjI5IiB3aWR0aD0iMzgxIiBoZWlnaHQ9IjgiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNCIgY3g9IjY4Ljc2IiBjeT0iNTAuNjciIHI9IjEwLjQ0Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTUiIGN4PSIxMDIuMDciIGN5PSI1MC42NyIgcj0iMTAuNDQiLz48Y2lyY2xlIGNsYXNzPSJjbHMtNiIgY3g9IjEzNS4zOSIgY3k9IjUwLjQ3IiByPSIxMC40NCIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTMxNC4xMywxMzEuMzhsLTEyMC45NSwyNDFjLTEyLjc1LDI1LjQsNS43Miw1NS4zNCwzNC4xNSw1NS4zNGgyNDEuOWMyOC40MywwLDQ2LjktMjkuOTQsMzQuMTUtNTUuMzRsLTEyMS0yNDFDMzY4LjMyLDEwMy4yOSwzMjguMjMsMTAzLjI5LDMxNC4xMywxMzEuMzhaIi8+PHBhdGggY2xhc3M9ImNscy03IiBkPSJNMjc2LjM2LDQyNy43MUg0NjkuMjNjMjguNDMsMCw0Ni45LTI5Ljk0LDM0LjE1LTU1LjM0TDM5Ni41MywxNTkuNDhzLTkuODgsMTE1LjIzLTYyLjczLDE1NS40NVMyNzAuNjEsNDAzLjc3LDI3Ni4zNiw0MjcuNzFaIi8+PHBhdGggY2xhc3M9ImNscy04IiBkPSJNMzE0LjEzLDEzMS4zOGwtMTIwLjk1LDI0MWMtMTIuNzUsMjUuNCw1LjcyLDU1LjM0LDM0LjE1LDU1LjM0aDI0MS45YzI4LjQzLDAsNDYuOS0yOS45NCwzNC4xNS01NS4zNGwtMTIxLTI0MUMzNjguMzIsMTAzLjI5LDMyOC4yMywxMDMuMjksMzE0LjEzLDEzMS4zOFoiLz48cmVjdCBjbGFzcz0iY2xzLTkiIHg9IjMyOC43NSIgeT0iMTUwLjc5IiB3aWR0aD0iMzkuMDYiIGhlaWdodD0iMTkzLjAyIiByeD0iMTkuNTMiLz48Y2lyY2xlIGNsYXNzPSJjbHMtOSIgY3g9IjM0OC4yOCIgY3k9IjM3OS40MyIgcj0iMTguMzQiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEwIiBwb2ludHM9IjIwNC4xNCAyMDkuODQgMjA0LjE0IDI4Ny40MiA4Ny41MiAyODcuNDIgODcuNTIgMjE3LjU1IDEwOS4yOSAxOTUuNzkgMTQwLjU1IDIyNy4wNSAxNjkuMSAxOTguNTEgMTkxLjI1IDIyMC42NiAyMDQuMTQgMjA5Ljg0Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0xMCIgcG9pbnRzPSIyMDQuMTQgMTg2LjI1IDIwNC4xNCAxMTAuODYgMTMyLjYgMTEwLjg2IDg3LjUyIDE1NS45OCA4Ny41MiAxOTMuOTYgMTA4Ljg5IDE3Mi41OSAxMzkuOTggMjAzLjY5IDE2Ny40MyAxNzYuMjQgMTkwLjY4IDE5OS40OCAyMDQuMTQgMTg2LjI1Ii8+PHBvbHlsaW5lIGNsYXNzPSJjbHMtMTAiIHBvaW50cz0iMTMyLjY0IDExMC44NiAxMzIuNTggMTU1Ljk4IDg3LjUyIDE1NS45OCIvPjxsaW5lIGNsYXNzPSJjbHMtMTEiIHgxPSIxODkuMDciIHkxPSIxMzguMjYiIHgyPSIxMzcuMTMiIHkyPSIxMzguMjYiLz48bGluZSBjbGFzcz0iY2xzLTExIiB4MT0iMTg5LjA3IiB5MT0iMTU1LjQ5IiB4Mj0iMTM3LjEzIiB5Mj0iMTU1LjQ5Ii8+PGxpbmUgY2xhc3M9ImNscy0xMSIgeDE9IjE4OS4wNyIgeTE9IjI0NS42OCIgeDI9IjEwNC45NCIgeTI9IjI0NS42OCIvPjxsaW5lIGNsYXNzPSJjbHMtMTEiIHgxPSIxODkuMDciIHkxPSIyNjIuOTIiIHgyPSIxMDQuOTQiIHkyPSIyNjIuOTIiLz48L2c+PC9nPjwvc3ZnPg=="
+                                alt="Page Not Found">
+                        </h2>
+                        <div class="page-intro-text small-12 medium-8 columns">
+                            <h2>We couldn't find the page.</h2>
+                            <p>
+                                The page you are looking for may have been moved or no longer exists.
+                                </br>
+                                You may want to try searching above or head back to our homepage.
+
+                            </p>
+
+                            <p>
+                                If you have further enquiries, you may <a
+                                    href="https://www.hdb.gov.sg/cs/infoweb/contact-us">contact
+                                    us</a>.
+
+                            </p>
+
+                            </br>
+
+                            <div class="buttonspace">
+                                <a href="https://www.hdb.gov.sg/cs/infoweb/homepage"
+                                    class="errorbtn error-a" style="color: white">Back
+                                    to Homepage</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="wrapper row">
+            <div class="back-to-top">
+                <a href="javascript:;" class="back-to-top-link js-back-to-top" aria-label="backtotop">
+                    <span class="icon icon-chevron2-up"></span>
+                </a>
+            </div>
+            <div class="footer_title">
+                Housing & Development Board
+   
+            </div>
+
+            <nav class="footer-nav small-12 large-12 columns" role="navigation">
+                <ul class="footer-nav-list list small-block-grid-1 large-block-grid-5">
+                    <li class="footer-nav-col">
+                        <a href="/cs/infoweb/about-us" class="footer-nav-link">About Us</a>
+                        <ul class="footer-nav-sublist list">
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/vision-mission-and-values" class="footer-nav-link">Vision, Mission, and Values
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/our-role" class="footer-nav-link">Our Role
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/history" class="footer-nav-link">HDB History and Towns
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/hdbs-refreshed-roadmap-designing-for-life" class="footer-nav-link">Designing for Life Roadmap
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/our-logo" class="footer-nav-link">Our Logo
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/organisation-structure" class="footer-nav-link">Organisation Structure
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/achievements-and-accolades" class="footer-nav-link">Achievements and Accolades
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/research-and-innovation" class="footer-nav-link">Research and Innovation
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/careers" class="footer-nav-link">Careers
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/scholarships-and-internships" class="footer-nav-link">Scholarships and Internships
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/about-us/news-and-publications" class="footer-nav-link">News &amp; Publications
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-col">
+                        <a href="/cs/infoweb/residential" class="footer-nav-link">Residential</a>
+                        <ul class="footer-nav-sublist list">
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/buying-a-flat" class="footer-nav-link">Buying a Flat 
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/selling-a-flat" class="footer-nav-link">Selling a Flat
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/servicing-your-hdb-housing-loan" class="footer-nav-link">Servicing Your HDB Housing Loan
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/renting-a-flat" class="footer-nav-link">Renting a Flat
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/living-in-an-hdb-flat" class="footer-nav-link">Living in an HDB Flat
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/where2shop" class="footer-nav-link">Shopping in Your Neighbourhood
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/renting-out-a-flat-bedroom" class="footer-nav-link">Renting Out a Flat/ Bedroom
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/residential/season-parking" class="footer-nav-link">Season Parking
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-col">
+                        <a href="/cs/infoweb/community" class="footer-nav-link">Community</a>
+                        <ul class="footer-nav-sublist list">
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/hdb-community-day" class="footer-nav-link">HDB Community Day
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/creating-vibrant-places" class="footer-nav-link">Creating Vibrant Places
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/caring-for-your-neighbours" class="footer-nav-link">Caring for Your Neighbours
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/practising-ecoliving" class="footer-nav-link">Practising Eco-Living
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/getting-involved" class="footer-nav-link">Getting Involved
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/community/community-publications" class="footer-nav-link">Community Publications
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-col">
+                        <a href="/cs/infoweb/business" class="footer-nav-link">Business</a>
+                        <ul class="footer-nav-sublist list">
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/commercial" class="footer-nav-link">Commercial
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/building-professionals" class="footer-nav-link">Building Professionals (BGBiz)
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/renovation-contractors" class="footer-nav-link">Renovation Contractors
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/land-developers-and-land-users" class="footer-nav-link">Land Developers and Land Users
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/tenderers" class="footer-nav-link">Tenderers 
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/business/estate-agents-and-salespersons" class="footer-nav-link">Estate Agents &amp; Salespersons
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-nav-col">
+                        <a href="/cs/infoweb/car-parks" class="footer-nav-link">Car Parks</a>
+                        <ul class="footer-nav-sublist list">
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/Types-of-HDB-Car-Parks" class="footer-nav-link">Types of HDB Car Parks
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/car-park-signboards" class="footer-nav-link">Car Park Signboards
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/parking-lot-line-markings" class="footer-nav-link">Parking Lot Line Markings
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/car-park-location-map" class="footer-nav-link">Car Park Location Map
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/parking-offences" class="footer-nav-link">Parking Offences
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/season-parking" class="footer-nav-link">Season Parking
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/shortterm-parking" class="footer-nav-link">Short-Term Parking
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/car-parks-for-business-activities" class="footer-nav-link">Car Parks for Business Activities
+                                    </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="/cs/infoweb/car-parks/parkinghdb" class="footer-nav-link">Parking@HDB
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col is-right-desktop-only">
+                <ul>
+                    <li class="is-inline-block-desktop-only"><a href="/cs/infoweb/contact-us" class="footer-social-channels-text">Contact Us</a></li>
+                    <li class="is-inline-block-desktop-only"><a href="https://services2.hdb.gov.sg/webapp/BF12AWFeedback/BF12SFrontController?service=ServiceFeedback&amp;operation=createFeedback" class="footer-social-channels-text">Write to Us</a></li>
+                    <li class="is-inline-block-desktop-only social_icons_whole">
+                        <div class="social_links">
+                            <a href="https://www.facebook.com/SingaporeHDB" target="_blank" class="social-channel fb" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Facebook</span>
+                                <span class="sgds-icon sgds-icon-facebook-alt"></span>
+                            </a>
+                        </div>
+                        <div class="social_links">
+                            <a href="https://www.instagram.com/singaporehdb/" target="_blank" class="social-channel instagram" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Instagram</span>
+
+                            </a>
+                        </div>
+                        <div class="social_links">
+                            <a href="http://www.twitter.com/SingaporeHDB" target="_blank" class="social-channel twitter" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Twitter</span>
+
+                            </a>
+                        </div>
+
+                        <div class="social_links">
+                            <a href="http://www.linkedin.com/company/singaporehdb" target="_blank" class="social-channel linkedin" rel="noopener noreferrer">
+                                <span class="visuallyhidden">LinkedIn</span>
+                                <span class="sgds-icon sgds-icon-linkedin-alt"></span>
+                            </a>
+                        </div>
+
+                        <div class="social_links">
+                            <a href="https://www.youtube.com/user/singaporeHDB" target="_blank" class="social-channel youtube" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Youtube</span>
+                                <span class="sgds-icon sgds-icon-youtube"></span>
+                            </a>
+                        </div>
+
+                        <div class="social_links">
+                            <a href="https://t.me/SingaporeHDB" target="_blank" class="social-channel telegram" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Telegram</span>
+                            </a>
+                        </div>
+
+                        <div class="social_links">
+                            <a href="https://www.whatsapp.com/channel/0029Va3eJi95fM5eWbq2Mi1j" target="_blank" class="social-channel whatsapp" rel="noopener noreferrer">
+                                <span class="visuallyhidden">Whatsapp</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mobilehdb_img">
+                <div class="sub_service">
+                    <a href="https://services2.hdb.gov.sg/webapp/BF08CESS/Index.jsp">Subscribe to HDB e-Alerts
+            </a>
+                </div>
+                <div>
+                    <a href="/cs/infoweb/mobile-hdb">Download Mobile@HDB
+            </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section class="footer-bottom">
+            <div class="wrapper row">
+                <div class="footer-border"></div>
+                <nav class="secondary-footer-nav  small-12 large-8 columns ">
+                    <a href="https://www.tech.gov.sg/report_vulnerability" class="secondary-footer-nav-link" target="_blank" rel="noopener noreferrer">Report Vulnerability</a>
+                    <a href="/cs/infoweb/privacy-statement" class="secondary-footer-nav-link">Privacy Statement</a>
+                    <a href="/cs/infoweb/terms-of-use" class="secondary-footer-nav-link">Terms of Use</a>
+                    <a href="/cs/infoweb/sitemap" class="secondary-footer-nav-link">Sitemap</a>
+                    <a href="/cs/infoweb/site-requirements" class="secondary-footer-nav-link">Site Requirements</a>
+                </nav>
+                <div class="last-review small-12 large-4 columns">
+                    <p>&copy;
+                        <script>document.write((new Date()).getFullYear());</script>, Government of Singapore</p>
+                    <p>Last Updated 21 January 2026</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
+<script src="/html/Dashboard/Foundation/Theming/scripts/modules.js"></script>
+<script src="/html/Dashboard/Foundation/Theming/scripts/main.js"></script>
+<script src="/html/Dashboard/Foundation/Theming/scripts/plugins.js"></script>
+<script src="/html/Dashboard/Foundation/Theming/scripts/foundation.min.js"></script>
+<script src="/html/Dashboard/Foundation/Theming/scripts/dynamic-nav.js"></script>
+<script src="/html/Dashboard/Foundation/Theming/scripts/carousel.js"></script>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    function addExternalScripts() {
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-5554471-2', 'auto');
+        ga('require', 'displayfeatures');
+
+        //share widget
+        (function (i, s, o, g, r, a, m) {
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523196364d2b9b64', 'ga');
+
+        //font
+        (function (i, s, o, g, r, a, m) {
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.rel = 'stylesheet'; a.type = 'text/css'; a.href = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'link', 'https://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic,600italic,700italic', 'ga');
+    }
+
+    var galoaded = false;
+
+    if (!galoaded) {
+        function insertGA() { addExternalScripts(); }
+        if (window.addEventListener) {
+            if (!galoaded) window.addEventListener("load", insertGA, false); galoaded = true;
+        } else if (window.attachEvent) {
+            if (!galoaded) window.attachEvent("onload", insertGA); galoaded = true;
+        } else { if (!galoaded) window.onload = insertGA; galoaded = true; }
+
+    }
+</script>
+
+<!-- auto open Ask Judy -->
+<script>
+    $(window).on('load', function () {
+        var urlParams = new URLSearchParams(window.location.search);
+
+        if (urlParams.get('action') == 'askjudy') {
+            $('#big-button-ask-judy').trigger('click');
+        }
+    });
+</script>
+
+<script>
+                /* JQUERY URL PLUGIN */
+/*! url - v1.8.6 - 2013-11-22 */window.url = function () { function a(a) { return !isNaN(parseFloat(a)) && isFinite(a) } return function (b, c) { var d = c || window.location.toString(); if (!b) return d; b = b.toString(), "//" === d.substring(0, 2) ? d = "http:" + d : 1 === d.split("://").length && (d = "http://" + d), c = d.split("/"); var e = { auth: "" }, f = c[2].split('@'); 1 === f.length ? f = f[0].split(":") : (e.auth = f[0], f = f[1].split(":")), e.protocol = c[0], e.hostname = f[0], e.port = f[1] || ("https" === e.protocol.split(":")[0].toLowerCase() ? "443" : "80"), e.pathname = (c.length > 3 ? "/" : "") + c.slice(3, c.length).join("/").split("?")[0].split("#")[0]; var g = e.pathname; "/" === g.charAt(g.length - 1) && (g = g.substring(0, g.length - 1)); var h = e.hostname, i = h.split("."), j = g.split("/"); if ("hostname" === b) return h; if ("domain" === b) return /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/.test(h) ? h : i.slice(-2).join("."); if ("sub" === b) return i.slice(0, i.length - 2).join("."); if ("port" === b) return e.port; if ("protocol" === b) return e.protocol.split(":")[0]; if ("auth" === b) return e.auth; if ("user" === b) return e.auth.split(":")[0]; if ("pass" === b) return e.auth.split(":")[1] || ""; if ("path" === b) return e.pathname; if ("." === b.charAt(0)) { if (b = b.substring(1), a(b)) return b = parseInt(b, 10), i[0 > b ? i.length + b : b - 1] || "" } else { if (a(b)) return b = parseInt(b, 10), j[0 > b ? j.length + b : b] || ""; if ("file" === b) return j.slice(-1)[0]; if ("filename" === b) return j.slice(-1)[0].split(".")[0]; if ("fileext" === b) return j.slice(-1)[0].split(".")[1] || ""; if ("?" === b.charAt(0) || "#" === b.charAt(0)) { var k = d, l = null; if ("?" === b.charAt(0) ? k = (k.split("?")[1] || "").split("#")[0] : "#" === b.charAt(0) && (k = k.split("#")[1] || ""), !b.charAt(1)) return k; b = b.substring(1), k = k.split("&"); for (var m = 0, n = k.length; n > m; m++)if (l = k[m].split("="), l[0] === b) return l[1] || ""; return null } } return "" } }(), "undefined" != typeof jQuery && jQuery.extend({ url: function (a, b) { return window.url(a, b) } });
+
+    /* ANCHOR SETUP */
+    var rr = (function (parent, $) {
+
+        var setup = function () {
+            var anchor = $.url("?anchor");
+
+            if (anchor != null) {
+                var $anchor = $("#" + anchor);
+                var $accordion = $anchor.closest(".accordion-navigation")
+
+                if (!$accordion.hasClass("active")) {
+                    $(".accordion-navigation-link", $accordion).click();
+
+                }
+
+
+                // Set timeout so Foundation 5 event listener will be triggered first
+                setTimeout(
+                    function () {
+                        $('html, body').stop().animate({
+                            'scrollTop': $anchor.offset().top
+                        }, 700);
+                    }
+                    , 400);
+
+
+            }
+        }
+
+        /** Export module method  */
+        parent.anchor = {
+            setup: setup
+        };
+
+        return parent;
+
+    }(rr || {}, jQuery));
+
+    jQuery(function ($) {
+        rr.anchor.setup();
+    });
+
+
+    /** To make Facebook widget load slowly **/
+    $(function () {
+        $(".social-feeds").appear(function () {
+            (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+        })
+    })
+
+
+    function jsLogging() {
+
+        var u = "https://services2.hdb.gov.sg/webapp/FI10AWCOMMON/FI10SAjaxHandlerNP";
+
+        $.ajax({
+            url: u,
+            type: "POST",
+            data: { title: document.title, url: location.href, esvcid: "", callback: "swallowLog" },
+            dataType: "jsonp",
+            jsonpCallback: "swallowLog",
+            timeout: 2000,
+            error: function () {/*user not login,swallow error*/ }
+        });
+
+        return false;
+    }
+
+    if ($.cookie("atid")) jsLogging();
+
+</script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523196364d2b9b64" async></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5625a1a743fa415d" async></script>
