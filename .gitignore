@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 .git
 .env
 /venv
 /social service
+=======
+/venv
+venv
+.env
+__pycache__
+*.pyc".env" 
+>>>>>>> 1bae19b9157e279d0220d9b52152f3b7788a005f
