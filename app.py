@@ -75,6 +75,6 @@ elif st.session_state.mode == 'chat':
             with st.spinner('Searching...'):
                 chain = get_rag_chain()
                 result = chain.invoke(prompt)
-                answer = result['result']
+                answer = result
             st.write(answer)
             st.session_state.messages.append({'role': 'assistant', 'content': answer})
