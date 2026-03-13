@@ -1,16 +1,18 @@
 import streamlit as st
 from eligibility import ELIGIBILITY_QUESTIONS, build_eligibility_prompt, get_rag_chain
 from dotenv import load_dotenv
-import os, requests
+import os, requests, random, string
 
 load_dotenv()
 
 st.set_page_config(page_title='BridgeAI', page_icon='🌉', layout='wide')
 
-# ── FIX 4: Cache the RAG chain — build it once, reuse forever ──
 @st.cache_resource
 def load_rag_chain():
     return get_rag_chain()
+
+def gen_code():
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
 
 # ── Session state init ──
 for key, default in [
@@ -18,12 +20,37 @@ for key, default in [
     ('profile', {}),
     ('messages', []),
     ('q_index', 0),
-    ('case_code', None),
+    ('case_created', False),
 ]:
     if key not in st.session_state:
         st.session_state[key] = default
 
-# ── FIX 2: Sidebar — always visible regardless of mode ──
+# ── Generate case code locally immediately — always works offline too ──
+if 'case_code' not in st.session_state:
+    st.session_state.case_code = gen_code()
+    try:
+        requests.post(
+            "http://localhost:8000/case/new",
+            json={"profile": {}, "urgency": "none"},
+            timeout=2
+        )
+        st.session_state.case_created = True
+    except:
+        pass
+
+# ── Sync to backend if generated offline and backend now available ──
+if not st.session_state.case_created:
+    try:
+        requests.post(
+            "http://localhost:8000/case/new",
+            json={"profile": st.session_state.profile, "urgency": "none"},
+            timeout=2
+        )
+        st.session_state.case_created = True
+    except:
+        pass
+
+# ── Sidebar ──
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/48/bridge.png", width=40)
     st.title("BridgeAI")
@@ -45,7 +72,6 @@ with st.sidebar:
 
     st.divider()
     st.subheader("Other Services")
-
     if st.button("⚖️ Legal & Gov Aid", use_container_width=True):
         st.session_state.mode = 'legal'
         st.rerun()
@@ -54,6 +80,15 @@ with st.sidebar:
         st.rerun()
 
     st.divider()
+
+    # ── Case code — always visible ──
+    st.subheader("📁 Your Case")
+    st.success(f"Code: **{st.session_state.case_code}**")
+    st.caption("Save this code to return to your session later.")
+
+    st.divider()
+
+    # ── Returning user ──
     st.subheader("Returning User?")
     case_input = st.text_input("Enter your case code:", placeholder="e.g. 4829XK")
     if st.button("Load my case", use_container_width=True) and case_input:
@@ -63,11 +98,15 @@ with st.sidebar:
                 data = resp.json()
                 if data.get("found"):
                     st.session_state.case_code = case_input
+                    st.session_state.case_created = True
+                    if data.get("case", {}).get("profile"):
+                        st.session_state.profile = data["case"]["profile"]
                     st.success(data["summary"])
+                    st.rerun()
                 else:
                     st.warning("Case code not found.")
         except requests.exceptions.ConnectionError:
-            st.info("Case service not connected yet.")  # graceful if Shaun's API isn't up
+            st.info("Case service not connected yet.")
 
 # ── Page header ──
 st.title("🌉 BridgeAI — Find Your Benefits")
@@ -109,7 +148,6 @@ if st.session_state.mode == 'home':
 # ELIGIBILITY DISCOVERY
 # ════════════════════════════════════
 elif st.session_state.mode == 'discovery':
-    # FIX 3: Back button always visible
     if st.button("← Back to Home"):
         st.session_state.mode = 'home'
         st.session_state.q_index = 0
@@ -145,11 +183,10 @@ elif st.session_state.mode == 'discovery':
     else:
         st.success("✅ Profile complete! Searching for everything you qualify for...")
         with st.spinner("Searching schemes..."):
-            chain = load_rag_chain()  # FIX 4: use cached chain
+            chain = load_rag_chain()
             prompt = build_eligibility_prompt(st.session_state.profile)
             result = chain.invoke(prompt)
 
-        # FIX 5: Guard against empty/bad result
         answer = result.get('result', '').strip() if isinstance(result, dict) else str(result).strip()
         if not answer:
             answer = "I couldn't find specific schemes for your profile. Please visit your nearest Social Service Office or call ComCare at 1800-222-0000."
@@ -185,7 +222,6 @@ elif st.session_state.mode == 'chat':
     st.subheader("💬 Chat with BridgeAI")
     st.caption("Ask anything — social services, housing, food, legal aid.")
 
-    # Render history
     for msg in st.session_state.messages:
         with st.chat_message(msg['role']):
             st.write(msg['content'])
@@ -197,13 +233,10 @@ elif st.session_state.mode == 'chat':
 
         with st.chat_message('assistant'):
             with st.spinner('Searching...'):
-                chain = load_rag_chain()  # FIX 4: cached
+                chain = load_rag_chain()
                 result = chain.invoke(prompt)
 
-            # FIX 1: Extract the answer string properly
             answer = result.get('result', '').strip() if isinstance(result, dict) else str(result).strip()
-
-            # FIX 5: Fallback if nothing returned
             if not answer:
                 answer = "I don't have specific information about that. For urgent needs, call ComCare at 1800-222-0000."
 
@@ -216,7 +249,7 @@ elif st.session_state.mode == 'chat':
             st.rerun()
 
 # ════════════════════════════════════
-# LEGAL (routes to Shaun's API)
+# LEGAL
 # ════════════════════════════════════
 elif st.session_state.mode == 'legal':
     if st.button("← Back to Home"):
@@ -231,12 +264,15 @@ elif st.session_state.mode == 'legal':
             try:
                 resp = requests.post(
                     "http://localhost:8000/legal/ask",
-                    json={"question": prompt},
+                    json={
+                        "question": prompt,
+                        "profile": st.session_state.profile,
+                        "case_code": st.session_state.case_code
+                    },
                     timeout=30
                 )
                 answer = resp.json().get("answer", "No answer returned.") if resp.ok else "Legal service unavailable."
             except requests.exceptions.ConnectionError:
-                # Fallback to local RAG if Shaun's API isn't up yet
                 chain = load_rag_chain()
                 result = chain.invoke(prompt)
                 answer = result.get('result', '') if isinstance(result, dict) else str(result)
@@ -245,7 +281,7 @@ elif st.session_state.mode == 'legal':
         st.write(answer)
 
 # ════════════════════════════════════
-# FOOD & SHELTER (routes to Alan's API)
+# FOOD & SHELTER
 # ════════════════════════════════════
 elif st.session_state.mode == 'food':
     if st.button("← Back to Home"):
@@ -270,7 +306,7 @@ elif st.session_state.mode == 'food':
                 if resp.ok:
                     data = resp.json()
                     if data.get('escalated'):
-                        st.error("🚨 " + data['answer'])  # crisis escalation — red box
+                        st.error("🚨 " + data['answer'])
                         if data.get('referral_summary'):
                             with st.expander("View referral summary sent to social worker"):
                                 st.text(data['referral_summary'])
@@ -281,7 +317,6 @@ elif st.session_state.mode == 'food':
                 else:
                     st.warning("Food service unavailable.")
             except requests.exceptions.ConnectionError:
-                # Fallback to local RAG
                 chain = load_rag_chain()
                 result = chain.invoke(prompt)
                 answer = result.get('result', '') if isinstance(result, dict) else str(result)
